@@ -1,0 +1,32 @@
+﻿<Window x:Class="Authentication.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Authentication"
+        mc:Ignorable="d"
+        Title="OrderWindow" Height="400" Width="600">
+    <Grid>
+        <TextBox Margin="0,0,200,200" x:Name="subIdTb" Width="150" Height="25" VerticalContentAlignment="Center" ></TextBox>
+        <Label Margin="0,0,440,200" Content="SubID" Width="50" Height="25" HorizontalContentAlignment="Right"/>
+        <TextBox  Margin="300,0,0,200" x:Name="last_nameTb" Width="150" Height="25" VerticalContentAlignment="Center"></TextBox>
+        <Label Margin="50,0,0,200" Content="Фамилия" Width="65" Height="25" HorizontalContentAlignment="Right" ></Label>
+        <TextBox Margin="0,0,200,100"  x:Name="first_nameTb" Width="150" Height="25" VerticalContentAlignment="Center"></TextBox>
+        <Label Margin="0,0,440,100"    Content="Имя" Width="50" Height="25" HorizontalContentAlignment="Right" ></Label>
+        <TextBox Margin="300,0,0,100" x:Name="second_nameTb" Width="150" Height="25" VerticalContentAlignment="Center"></TextBox>
+        <Label Margin="50,0,0,100" Content="Отчество" Width="65" Height="25" HorizontalContentAlignment="Right" ></Label>
+        <TextBox Margin="0,0,200,0" x:Name="p_serieTb" Width="150" Height="25" VerticalContentAlignment="Center"></TextBox>
+        <Label Margin="0,0,440,0" Content="Серия" Width="50" Height="25" HorizontalContentAlignment="Right"/>
+        <TextBox Margin="300,100,0,0" x:Name="doc_numbTb" Width="150" Height="25" VerticalContentAlignment="Center"></TextBox>
+        <Label Margin="50,0,0,0" Content="Номер" Width="65" Height="25" HorizontalContentAlignment="Right"></Label>
+
+        <ComboBox Margin="0,100,200,0" x:Name="doc_typeCb" Width="150" Height="25" SelectedIndex="0">
+            <TextBlock>СНИЛС</TextBlock>
+            <TextBlock>ИНН</TextBlock>
+        </ComboBox>
+        <Label Margin="0,100,440,0" Content="Док" Width="50" Height="25" HorizontalContentAlignment="Right"></Label>
+        <TextBox Margin="300,0,0,0" x:Name="p_numberTb" Width="150" Height="25" VerticalContentAlignment="Center"></TextBox>
+        <Label Margin="50,100,0,0" Content="Док.№" Width="65" Height="25" HorizontalContentAlignment="Right"></Label>
+        <Button Margin="300,200,0,0" x:Name="addButton" Content="Добавить" Width="150" Height="25" Click="addButton_Click" ></Button>
+    </Grid>
+</Window>
